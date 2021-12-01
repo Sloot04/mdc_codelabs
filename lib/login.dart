@@ -62,8 +62,6 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             const SizedBox(height: 120.0),
-            // TODO: Wrap Username with AccentColorOverride (103)
-            // TODO: Wrap Password with AccentColorOverride (103)
             TextField(
               controller: _usernameController,
               decoration: InputDecoration(
@@ -89,7 +87,6 @@ class _LoginPageState extends State<LoginPage> {
               obscureText: true,
             ),
             ButtonBar(
-              // TODO: Add a beveled rectangular border to CANCEL (103)
               children: <Widget>[
                 TextButton(
                   child: const Text('CANCEL'),
@@ -108,8 +105,6 @@ class _LoginPageState extends State<LoginPage> {
                     _passwordController.clear();
                   },
                 ),
-                // TODO: Add an elevation to NEXT (103)
-                // TODO: Add a beveled rectangular border to NEXT (103)
                 ElevatedButton(
                   child: const Text('NEXT'),
                   style: ButtonStyle(
@@ -132,5 +127,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-// TODO: Add AccentColorOverride (103)
